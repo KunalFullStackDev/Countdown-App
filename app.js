@@ -8,10 +8,11 @@ let Countdown = () => {
     const newYearsDate = new Date(newYears);
     const currentDate = new Date();
 
-    const seconds = Math.floor((newYearsDate - currentDate) / 1000);
-    const minutes = Math.floor(seconds / 60);
-    const hours = Math.floor(minutes / 60);
-    const days = Math.floor(hours / 24);
+    const totalseconds = Math.floor((newYearsDate - currentDate) / 1000);
+    const seconds = Math.floor(totalseconds) % 60;
+    const minutes = Math.floor(totalseconds / 60) % 60;
+    const hours = Math.floor(totalseconds / 3600) % 24;
+    const days = Math.floor(totalseconds/ 3600 / 24);
 
     Days.textContent = days;
     Hours.textContent = hours;
