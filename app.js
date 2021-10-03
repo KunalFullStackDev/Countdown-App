@@ -1,8 +1,15 @@
 let newYears = document.getElementById("DateForCountdown");
+let InputString = document.getElementById("Input");
 let Days = document.getElementById("days");
 let Hours = document.getElementById("hours");
 let Minutes = document.getElementById("min");
 let Seconds = document.getElementById("sec");
+
+function btn(){
+    Countdown();
+    document.getElementById("Heading").textContent = InputString.value;
+    setInterval(Countdown, 1000)
+}
 
 let Countdown = () => {
     const newYearsDate = new Date(newYears.value);
@@ -27,5 +34,5 @@ let TimeAfterTen = (time) =>{
         return time;
     }
 }
-Countdown();
-setInterval(Countdown, 1000)
+
+// Countdown();

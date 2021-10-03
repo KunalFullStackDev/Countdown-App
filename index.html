@@ -10,12 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/Responsive.css">
 </head>
 
 <body>
+    <div class="askforcountdowndate">
+        <label for="CountdownFor">Enter Date for which You want to start Countdown For :- </label><br>
+        <input type="Date" id="DateForCountdown">
+    </div>
+    <div class="inputString">
+        <input type="text" class="InputString" placeholder="For you have Started the Countdown" id="Input">
+        </div>
+        <div class="btn">
+            <button onclick="btn()">Enter</button>
+        </div>
     <div class="container">
         <div class="heading">
-            <h2>New Year Eve</h2>
+            <h2 id="Heading">New Year Eve</h2>
         </div>
 
         <div class="countdown_container move_left">
@@ -36,10 +47,6 @@
                 <p class="aligntext">seconds</p>
             </div>
         </div>
-    </div>
-    <div class="askforcountdowndate">
-        <label for="CountdownFor">Enter Date for which You want to start Countdown For : -</label>
-        <input type="Date" id="DateForCountdown">
     </div>
     <script src="/app.js"></script>
 </body>
