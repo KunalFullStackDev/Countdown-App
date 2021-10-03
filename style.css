@@ -12,6 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgb(47, 186, 228);
+    flex-direction: column;
 }
 
 .container{
@@ -43,7 +44,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: rgb(0, 0, 0);
     font-weight: bolder;
 }
@@ -53,19 +54,17 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 2;
+    font-size: 5rem;
+    line-height: 1;
     text-align: center;
 }
 .text .aligntext{
-    position: relative;
-    left: 3.4rem;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1rem;
     color: rgb(0, 0, 0);
 }
 
 .move_left{
     position: relative;
-    /* right: 11.5rem; */
     transform: translateY(60px);
 }
